@@ -1,0 +1,40 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{book} % A4 paper size and default 11pt font size
+
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic dummy publisher logo
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{stix} % Use the STIX fonts
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\Huge\bfseries A Collection of \\[0.5\baselineskip] \LaTeX ~Templates}\\[2\baselineskip] % Title
+		{\large\textit{A predictable subtitle}}\\[4\baselineskip] % Subtitle or further description
+		{\Large\textsc{gordon freeman}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+		
+		{\noindent The Publisher~~\plogo}\\[\baselineskip] % Publisher and logo
+	}
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
